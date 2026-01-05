@@ -72,7 +72,7 @@
       max-width: 600px;
     }
 
-    /* ===== SECCIÓN SERVICIOS ===== */
+    /* ===== SERVICIOS ===== */
     .services {
       max-width: 1000px;
       margin: -40px auto 0;
@@ -127,6 +127,28 @@
       color: #64748b;
     }
 
+    /* ===== BOTÓN WHATSAPP ===== */
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: white;
+      padding: 14px 18px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      z-index: 9999;
+    }
+
+    .whatsapp-btn:hover {
+      background: #1ebe5d;
+    }
+
     /* ===== RESPONSIVE ===== */
     @media (min-width: 768px) {
       .hero-content {
@@ -178,14 +200,15 @@
   <footer>
     © 2026 CamaraPro · Servicio Técnico Profesional
   </footer>
-<!-- BOTÓN WHATSAPP -->
-<a
-  href="https://wa.me/573053910583?text=Hola%20quiero%20información%20sobre%20servicio%20técnico%20de%20CamaraPro"
-  class="whatsapp-btn"
-  target="_blank"
->
-  💬 WhatsApp
-</a>
+
+  <!-- BOTÓN WHATSAPP -->
+  <a
+    href="https://wa.me/573053910583?text=Hola%20quiero%20información%20sobre%20servicio%20técnico%20de%20CamaraPro"
+    class="whatsapp-btn"
+    target="_blank"
+  >
+    💬 WhatsApp
+  </a>
 
 </body>
 </html>
