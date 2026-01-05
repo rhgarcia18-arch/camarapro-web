@@ -2,14 +2,22 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Cámara Pro</title>
+  <title>CamaraPro</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
+    :root {
+      /* 🎨 Colores corporativos */
+      --color-principal: #0f172a;
+      --color-secundario: #2563eb;
+      --color-fondo: #f1f5f9;
+      --color-texto: #334155;
+    }
+
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      background: var(--color-fondo);
       min-height: 100vh;
       display: flex;
       align-items: center;
@@ -19,41 +27,53 @@
     .card {
       background: white;
       padding: 40px;
-      max-width: 420px;
+      max-width: 460px;
       width: 90%;
-      border-radius: 12px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+      border-radius: 14px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
       text-align: center;
     }
 
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: var(--color-secundario);
+      margin-bottom: 10px;
+    }
+
     h1 {
-      margin-top: 0;
-      color: #1e3c72;
+      margin-top: 10px;
+      color: var(--color-principal);
     }
 
     p {
-      color: #555;
+      color: var(--color-texto);
       line-height: 1.6;
     }
 
     .footer {
       margin-top: 30px;
       font-size: 14px;
-      color: #999;
+      color: #94a3b8;
     }
   </style>
 </head>
 
 <body>
   <div class="card">
-    <h1>CamaraPro</h1>
+
+    <!-- 🖼️ Logo -->
+    <div class="logo">CamaraPro</div>
+
+    <h1>Bienvenidos</h1>
+
     <p>
-      Bienvenidos a nuestro sitio web.<br>
-      Ofrecemos soluciones profesionales en nuestro sector.
+      Somos una empresa enfocada en brindar soluciones profesionales
+      con calidad y confianza.
     </p>
 
     <p>
-      Estamos trabajando para brindarte más información muy pronto.
+      Pronto encontrarás más información sobre nuestros servicios.
     </p>
 
     <div class="footer">
