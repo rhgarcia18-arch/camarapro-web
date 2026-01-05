@@ -2,83 +2,39 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>CamaraPro</title>
+  <title>CamaraPro | Servicio Técnico Profesional</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
     :root {
-      /* 🎨 Colores corporativos */
-      --color-principal: #0f172a;
-      --color-secundario: #2563eb;
-      --color-fondo: #f1f5f9;
-      --color-texto: #334155;
+      --azul-oscuro: #0b3558;
+      --azul-medio: #0f4c81;
+      --rojo: #e53935;
+      --gris-claro: #f4f6f8;
+      --texto: #1f2933;
+    }
+
+    * {
+      box-sizing: border-box;
     }
 
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: var(--color-fondo);
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      background: var(--gris-claro);
+      color: var(--texto);
     }
 
-    .card {
-      background: white;
-      padding: 40px;
-      max-width: 460px;
-      width: 90%;
-      border-radius: 14px;
-      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-      text-align: center;
+    /* ===== HERO ===== */
+    .hero {
+      background: linear-gradient(135deg, var(--azul-oscuro), var(--azul-medio));
+      color: white;
+      padding: 60px 20px;
+      position: relative;
+      overflow: hidden;
     }
 
-    .logo {
-      font-size: 28px;
-      font-weight: bold;
-      color: var(--color-secundario);
-      margin-bottom: 10px;
-    }
-
-    h1 {
-      margin-top: 10px;
-      color: var(--color-principal);
-    }
-
-    p {
-      color: var(--color-texto);
-      line-height: 1.6;
-    }
-
-    .footer {
-      margin-top: 30px;
-      font-size: 14px;
-      color: #94a3b8;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="card">
-
-    <!-- 🖼️ Logo -->
-    <div class="logo">CamaraPro</div>
-
-    <h1>Bienvenidos</h1>
-
-    <p>
-      Somos una empresa enfocada en brindar soluciones profesionales
-      con calidad y confianza.
-    </p>
-
-    <p>
-      Pronto encontrarás más información sobre nuestros servicios.
-    </p>
-
-    <div class="footer">
-      © 2026 CamaraPro
-    </div>
-  </div>
-</body>
-</html>
+    .hero::after {
+      content: "";
+      position: absolute;
+      right:
